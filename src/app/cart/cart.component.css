@@ -1,0 +1,66 @@
+.list{
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr; 
+	grid-gap: 25px;
+	margin-top: 30px;
+	padding: 0 30px;
+}
+.item{
+	border-right: 1px solid #cecece;
+	border-left: 1px solid #cecece;
+	text-align: center;
+	line-height: 15px;
+}
+.item-link{
+	cursor: pointer;
+	text-decoration: none;
+	color: black;
+}
+.item-link:hover .item-img{
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.item-img{
+	height: 420px;
+	width: 100%; 
+}
+.italic{
+	font-size: 18px;
+	font-style: italic;
+}
+.price strong{
+	font-size: 24px;
+	color: #f9530e;
+}
+.like{ 
+	border: none; 
+	box-shadow: 0 0 10px rgba(255,0,0,0.5);
+	border-radius: 50px;
+	background-color: white; 
+	position: absolute;
+	line-height: 10px;
+	width: 50px; 
+	height: 50px; 
+	margin: 10px;
+}
+.like:hover{
+	cursor: pointer;
+	box-shadow: 0 0 10px rgba(255,0,0,0.8);
+}
+.like img{
+	width: 100%;
+}
+.cart{
+	width: 100%;
+	padding: 10px 20px;
+	color: black;
+	background-color: #f4a02d;
+	border: none;
+	border-radius: 5px;
+}
+.cart:hover{
+	cursor: pointer;
+	background-color: #df860d;
+}
+.sum{
+	text-align: center;
+}

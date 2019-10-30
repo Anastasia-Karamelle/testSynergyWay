@@ -1,0 +1,21 @@
+
+ 
+<h2 id="title"> Плащи </h2>  
+
+<div class="list">
+
+	<div class="item" *ngFor="let item of items">
+		<a class="item-link">
+			<button class="like">
+				<img src="https://us.123rf.com/450wm/mr_vector/mr_vector1508/mr_vector150800133/43890793-valentines-day-heart-valentine-simple-vector-illustration-isolated-love-symbol.jpg?ver=6">
+			</button>
+			<img class="item-img" src="{{item.img}}">
+			<h2> {{item.name}} </h2>
+
+			<p class="italic"> {{item.label}} </p>
+			<p class="price"><strong> {{item.price}} $</strong></p>
+		</a>
+		<button class="cart" (click)="addToCart(item)"><strong>+</strong> Add to Cart </button>
+	</div>
+	 
+</div>
